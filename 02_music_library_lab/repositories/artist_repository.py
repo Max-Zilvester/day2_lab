@@ -1,7 +1,7 @@
 from db.run_sql import run_sql
 
 from models.artist import Artist
-from model.album import album
+from models.album import Album
 
 def save(artist):
     sql = "INSERT INTO artists (name) VALUES (%s) RETURNING *"

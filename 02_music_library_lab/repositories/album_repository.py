@@ -53,3 +53,7 @@ def update(album):
     values = [album.name, album.genre, album.artist.id, album.id]
     run_sql(sql, values) 
     
+def select_by_artist(artist):
+    sql = "SELECT * FROM albums WHERE artist = %s"
+    value = [artist.name]
+    run_sql(sql, values)
