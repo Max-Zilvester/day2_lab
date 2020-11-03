@@ -4,8 +4,8 @@ from models.artist import Artist
 import repositories.album_repository as album_repository
 import repositories.artist_repository as artist_repository
 
-artist_repository.delete_all()
 album_repository.delete_all()
+artist_repository.delete_all()
 
 artist1 = Artist("Johny Cash")
 artist_repository.save(artist1)
